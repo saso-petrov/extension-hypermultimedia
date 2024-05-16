@@ -97,7 +97,8 @@ export const loadTwitterScript = () => {
 export const fetchOEmbedHtml = async (params: Record<string, any>) => {
   // Build the query string from the params object
   const urlParams = new URLSearchParams(params);
-  const urlWithParams = `https://publish.twitter.com/oembed?${urlParams.toString()}`;
+  // const urlWithParams = `https://publish.twitter.com/oembed?${urlParams.toString()}`;
+  const urlWithParams = `https://shopapi.pesek.top/oembed?${urlParams.toString()}`;
 
   const response = await fetch(urlWithParams);
 
